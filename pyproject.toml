@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "minimal-example-pdoc-embedded-image"
+version = "0.0.1"
+description = "A minimal example to reproduce an issue with pdoc not displaying embedded images properly."
+authors = ["HackXIt <hackxit@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pdoc = "^14.5.0"
+
+[tool.poetry.group.dev.dependencies]
+invoke = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
