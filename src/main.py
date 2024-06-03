@@ -3,16 +3,22 @@ import os
 __doc__ = """
 A minimal example to reproduce an issue with pdoc not displaying embedded images properly.
 
+**path written relative to the current file:**
 ![software-bug JPEG](../assets/software-bug.jpg)
-![software-bug PNG](../assets/software-bug.png)
+
+**path written from the perspective of the root folder:**
+![software-bug JPEG](./docs/assets/software-bug.jpg)
 """
 
 def main():
     """
     A minimal example to reproduce an issue with pdoc not displaying embedded images properly.
 
+    **path written relative to the current file:**
     ![software-bug JPEG](../assets/software-bug.jpg)
-    ![software-bug PNG](../assets/software-bug.png)
+
+    **path written from the perspective of the root folder:**
+    ![software-bug JPEG](./docs/assets/software-bug.jpg)
     """
     print(__doc__)
 
